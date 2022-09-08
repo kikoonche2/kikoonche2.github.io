@@ -295,11 +295,8 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function () {
-							if (location.hash.indexOf("blackstorm") != -1) {
+							if (location.hash.indexOf("games") != -1 && location.hash != '#games') {
 								location.hash = '#games'
-							}
-							else if (location.hash.indexOf("prototype") != -1 && location.hash != '#prototypes'){
-								location.hash = '#prototypes'
 							}
 							else if (location.hash.indexOf("project") != -1 && location.hash != '#projects') {
 								location.hash = '#projects'
